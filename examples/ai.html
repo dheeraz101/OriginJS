@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Content Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    window.ORIGIN_CONFIG = { mode: "manual" };
+  </script>
+</head>
+<body class="bg-neutral-50 p-16">
+
+<section id="aiContent"
+  class="max-w-xl bg-white p-8 rounded-2xl shadow"
+  data-origin-author="Dheeraj V."
+  data-origin-source="Human + AI (edited)"
+  data-origin-date="2026-01-18T09:45:00Z"
+  data-origin-type="ai-assisted"
+  data-origin-verified="true">
+
+  <h1 class="text-xl font-semibold">AI-assisted writing</h1>
+  <p class="mt-4 text-neutral-600">
+    This content was generated with AI and reviewed by a human.
+  </p>
+
+  <button onclick="Origin.show(document.getElementById('aiContent'))"
+    class="mt-6 text-sm text-blue-600">
+    View content origin
+  </button>
+</section>
+
+<br>
+<br>
+
+<a
+  href="../index.html"
+  class="inline-flex items-center gap-2 text-sm text-neutral-600 hover:text-neutral-900 mb-8"
+>
+  ← Back to documentation
+</a>
+
+<script src="../origin.js"></script>
+</body>
+</html>
