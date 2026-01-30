@@ -57,3 +57,8 @@ Add one script tag:
 
 ```html
 <script src="https://your-site.netlify.app/origin.min.js"></script>
+```
+
+---
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg)](https://www.buymeacoffee.com/dheeraz)
