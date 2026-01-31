@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <title>Origin.js - Content Origin, Made Visible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <meta name="description" content="Origin.js is a tiny client-side library that makes content origin visible: author, source, date, and type surfaced directly in the UI." />
+  <meta name="keywords" content="origin, attribution, content origin, author, source, date, type, javascript library, client-side, ui" />
+  <meta name="author" content="Dheeraz V." />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -138,14 +142,17 @@ window.ORIGIN_CONFIG = { mode: "hover" }
 
   <!-- FOOTER -->
   <footer class="mt-40 text-sm text-neutral-400">
+    <a href="https://www.buymeacoffee.com/dheeraz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 180px !important;" ></a>
+    <br /><br />
     Origin.js is a client-side UI utility.  
-    No backend. No tracking. No verification.
-    <br />
-    <br />
-    <a href="https://www.buymeacoffee.com/dheeraz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+    No backend. No tracking. No verification. 
   </footer>
-
 </div>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTopBtn" class="hidden fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition">
+  <i class="ri-arrow-up-line text-xl"></i> <!-- Remixicon Arrow Up Icon -->
+</button>
 
 <!-- COPY SCRIPT LOGIC -->
 <script>
@@ -186,6 +193,23 @@ function copyScript() {
     }, 1800);
   });
 }
+</script>
+
+<!-- Back to Top Button Logic -->
+<script>
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTopBtn.classList.remove('hidden');  // Show the button
+    } else {
+      backToTopBtn.classList.add('hidden');     // Hide the button
+    }
+  };
+
+  backToTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 </script>
 
 <script src="origin.js"></script>
